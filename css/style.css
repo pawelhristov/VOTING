@@ -1,0 +1,63 @@
+body {
+  background: #777;
+}
+.flip {
+  -webkit-perspective: 800;
+  width: 300px;
+  height: 210px;
+  position: relative;
+  margin: 50px auto;
+}
+.flip .message.flipped {
+  -webkit-transform: rotatex(-180deg);
+}
+.flip .message {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1.5s;
+}
+.flip .message .card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+  font-family: Georgia;
+  font-size: 1.5em;
+  text-align: center;
+}
+.card {
+  border-radius: 30px;
+  box-shadow: 12px 12px 12px #ccc;
+}
+.flip .message .card {
+  position: absolute;
+  z-index: 1;
+  background-color: #4CAF50;
+  background-image: linear-gradient(#ffffff 22%, transparent 26%, #f44336 73%);
+  background-size: 300px;
+  color: #00fdff;
+  cursor: pointer;
+  font-size: 3.0em;
+  text-align: center;
+  line-height: 205px;
+}
+.flip .message .back {
+  -webkit-transform: rotatex(-180deg);
+  background: #7a56bd;
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+  text-align: center;
+  line-height: 26px;
+}
+.vote {
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: #e0731a;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
